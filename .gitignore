@@ -1,0 +1,40 @@
+# ==========================================================
+# .gitignore for STM32CubeIDE / CubeMX projects
+# The patterns apply in all subfolders.
+# ==========================================================
+
+# --- CubeIDE build output ---------------------------------
+# Debug/ and Release/ contain object files, makefiles, ELF/MAP files, etc.
+# They are regenerated on every build.
+Debug/
+Release/
+build/
+
+# --- Compiled output and intermediate files (if outside Debug/) ---
+*.o
+*.d
+*.su
+*.cyclo
+*.elf
+*.bin
+*.hex
+*.srec
+*.map
+*.list
+
+# --- Eclipse / CubeIDE workspace --------------------------
+# Machine-specific settings; CubeIDE regenerates them on import.
+.metadata/
+.settings/
+RemoteSystemsTempFiles/
+
+# --- Editor and operating system files --------------------
+.vscode/
+.idea/
+*.swp
+*~
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
+desktop.ini
